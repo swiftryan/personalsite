@@ -34,3 +34,25 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+# TODO
+- Custom favicon
+- Aria as needed
+- Add comments to everything
+- ~~Add links to Porjects section~~
+- ~~Link to full resume~~
+- ~~Add links to companys~~
+- ~~At a glance section~~
+- ~~Add links for companies~~
+- ~~Add section for what this project is built from with links and links to this example project~~
+- sticky top while scrolling for headers only on mobile
+- ~~change font~~
+- ~~transitions~~
+- ~~show boxes on hover~~
+- ~~Display on normal~~
+- ~~Font size on normal~~
+- Display on small (mobile - we will have 3 breakpoints. sm-mobile, tablet-md, laptop, lg)
+- font size on small (Mobile)
+- Create dark mode
+- ~~Hide at a glance modal for smaller screens~~
