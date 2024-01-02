@@ -4,6 +4,7 @@ export interface Education {
     study: string,
 }
 
+// List of all educations of note
 export const Educations: Education[] = [
     {
         school: "Johns Hopkins University",

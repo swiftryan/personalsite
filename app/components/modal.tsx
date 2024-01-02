@@ -15,6 +15,7 @@ export type ChipProps = DetailedHTMLProps<
 
 const DefaultModalStyle = "fixed top-0 right-0 left-0 z-50 justify-center items-center w-full h-[calc(100%-1rem)] max-h-full"
 
+// Generic Modal component
 const Modal = forwardRef<Ref, ChipProps>((props, ref) => {
     const {
         id,

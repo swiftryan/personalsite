@@ -2,11 +2,6 @@ import clsx from "clsx";
 import React, {DetailedHTMLProps, forwardRef, HTMLAttributes} from "react";
 
 interface ChipOptions {
-    /**
-     * Display variants
-     * @default "solid"
-     * @type ChipVariant
-     */
     variant?: ChipVariant;
     size?: ChipSize;
 }
@@ -49,6 +44,7 @@ const getSize = (size: ChipSize) => {
     return sizeStyle[size] ? sizeStyle[size] : undefined
 };
 
+// Generic Chip component
 const Chip = forwardRef<Ref, ChipProps>((props, ref) => {
     const {
         variant = ChipVariants.SOLID,

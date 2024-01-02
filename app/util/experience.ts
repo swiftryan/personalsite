@@ -48,6 +48,7 @@ export interface Experience {
     technicalKnowledge: TechnicalKnowledge[],
 }
 
+// List of all work experiences of note
 export const WorkExperience: Experience[] = [
     {
         startDate: {

@@ -12,6 +12,7 @@ export type TypographyProps = DetailedHTMLProps<
 
 const DefaultTypographyStyle = ""
 
+// Generic Typography component
 const Typography = forwardRef<Ref, TypographyProps>((props, ref) => {
     const {
         className,

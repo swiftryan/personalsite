@@ -13,6 +13,7 @@ type InlineLinkProps = DetailedHTMLProps<
 
 const DefaultInlineLinkStyle = "text-emerald-400 hover:text-emerald-600 transition duration-150 ease-out hover:ease-in"
 
+// Generic InlineLink component
 export default function InlineLink(props: PropsWithChildren<InlineLinkProps>) {
     // Default open link in new tab
     const {

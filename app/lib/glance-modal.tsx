@@ -11,6 +11,8 @@ import ContactLogos from "@/app/lib/contact-logos";
 interface SkillItemProps {
     skill: Skill
 }
+
+// SkillItem is a single technical knowledge skill for the "At a glance" page
 function SkillItem(props: SkillItemProps) {
     const { skill } = props;
     return (
@@ -30,6 +32,7 @@ interface SkillListProps {
     skills: Skill[]
 }
 
+// SkillList is a list of SkillItems
 function SkillList(props: SkillListProps) {
     return (
         <div className={"flex flex-col gap-8"}>
@@ -38,11 +41,14 @@ function SkillList(props: SkillListProps) {
     );
 }
 
+// ModelToggle has both the modal for display and the toggle button to show the modal.
+// The Modal is only available on the largest screen sizes
 export default function ModalToggle() {
     const [hidden, setHidden] = useState<boolean>(true);
     const open = () => setHidden(false)
     const close = () => setHidden(true)
 
+    // Button to show the Modal
     const ToggleButton = () => (
         <Button onClick={open} className={"px-0 py-0 text-emerald-400 hover:text-emerald-600 group"}>
             <div className={"flex flex-row gap-1"}>
@@ -60,12 +66,12 @@ export default function ModalToggle() {
         <div>
             <ToggleButton/>
             <Modal id={"glance-modal"} tabIndex={-1} hidden={hidden} aria-hidden="true">
-                <div className={"flex justify-center w-full h-dvh bg-slate-700/75"}>
-                    <div className={"relative top-24 h-max rounded-2xl bg-white opacity-100 p-8 max-w-screen-md"}>
+                <div className={"flex justify-center w-full h-dvh bg-slate-700/75 dark:bg-slate-500/75"}>
+                    <div className={"relative top-24 h-max rounded-2xl bg-white dark:bg-slate-700 dark:text-white opacity-100 p-8 max-w-screen-md"}>
                         {/*Header*/}
                         <div className={"flex flex-row justify-between pb-4"}>
                             <Typography className={"font-bold text-4xl"}>At a glance...</Typography>
-                            <Button onClick={close} className={"p-0"}>
+                            <Button onClick={close} className={"p-0 hover:text-emerald-600"}>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                      strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/>

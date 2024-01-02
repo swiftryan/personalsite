@@ -3,11 +3,6 @@ import React, {DetailedHTMLProps, forwardRef, HTMLAttributes} from "react";
 import {ChipVariants} from "@/app/components/chip";
 
 interface ButtonOptions {
-    /**
-     * Display variants
-     * @default "normal"
-     * @type ButtonVariant
-     */
     variant?: ButtonVariant;
     size?: ButtonSizes;
 }
@@ -47,6 +42,7 @@ const getSize = (size: ButtonSize) => {
     return sizeStyle[size] ? sizeStyle[size] : undefined
 };
 
+// Generic Button component
 const Button = forwardRef<Ref, ButtonProps>((props, ref) => {
     const {
         variant = ButtonVariants.Empty,
